@@ -6,9 +6,9 @@ Starting point. Each module gets its own spec doc when we're ready to build it.
 
 ## Modules
 
-- [ ] **01 · Foundation** — `package.json`, `tsconfig.json`
-- [ ] **02 · Config** — `src/config.ts`
-- [ ] **03 · UI Contract** — `src/ui/types.ts`
+- [x] **01 · Foundation** — `package.json`, `tsconfig.json`
+- [x] **02 · Config** — `src/config.ts`
+- [x] **03 · UI Contract** — `src/ui/types.ts`
 - [ ] **04 · Adapter: Git** — `src/adapters/git.ts`
 - [ ] **05 · Adapter: GitHub** — `src/adapters/github.ts`
 - [ ] **06 · Adapter: ClickUp** — `src/adapters/clickup.ts`

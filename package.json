@@ -1,0 +1,30 @@
+{
+  "name": "gcr-cli",
+  "version": "0.1.0",
+  "description": "Git ClickUp Release — link PRs, review code, compile releases",
+  "type": "module",
+  "bin": {
+    "gcr": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc && cp -r src/prompts dist/prompts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@mariozechner/pi-ai": "^0.67.68",
+    "@mariozechner/pi-agent-core": "^0.67.68",
+    "@mariozechner/pi-coding-agent": "^0.67.68",
+    "simple-git": "^3.27.0",
+    "axios": "^1.7.9",
+    "@inquirer/prompts": "^7.4.0",
+    "chalk": "^5.4.1",
+    "ora": "^8.2.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "tsx": "^4.19.2",
+    "@types/node": "^22.0.0"
+  }
+}

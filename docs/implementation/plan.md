@@ -9,14 +9,14 @@ Starting point. Each module gets its own spec doc when we're ready to build it.
 - [x] **01 · Foundation** — `package.json`, `tsconfig.json`
 - [x] **02 · Config** — `src/config.ts`
 - [x] **03 · UI Contract** — `src/ui/types.ts`
-- [ ] **04 · Adapter: Git** — `src/adapters/git.ts`
-- [ ] **05 · Adapter: GitHub** — `src/adapters/github.ts`
-- [ ] **06 · Adapter: ClickUp** — `src/adapters/clickup.ts`
-- [ ] **07 · Adapter: Agent** — `src/adapters/agent.ts`
-- [ ] **08 · Terminal UI** — `src/ui/terminal/`
-- [ ] **09 · Workflow: PR Create** — `src/workflows/pr-create.ts`
-- [ ] **10 · Workflow: Release** — `src/workflows/release.ts`
-- [ ] **11 · Entry Point** — `src/index.ts`
+- [x] **04 · Adapter: Git** — `src/adapters/git.ts`
+- [x] **05 · Adapter: GitHub** — `src/adapters/github.ts`
+- [x] **06 · Adapter: ClickUp** — `src/adapters/clickup.ts`
+- [x] **07 · Adapter: Agent** — `src/adapters/agent.ts`
+- [x] **08 · Terminal UI** — `src/ui/terminal/`
+- [x] **09 · Workflow: PR Create** — `src/workflows/pr-create.ts`
+- [x] **10 · Workflow: Release** — `src/workflows/release.ts`
+- [x] **11 · Entry Point** — `src/index.ts`
 
 ---
 

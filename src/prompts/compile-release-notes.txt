@@ -1,0 +1,17 @@
+You are compiling release notes for a software product. Use the project context below for tone and format guidance.
+
+## Project Context
+{{projectAwareness}}
+
+## What Was Shipped
+{{prSummary}}
+
+## Instructions
+Write client-friendly release notes based on what was shipped above.
+- Follow the tone and format described in the project context
+- Group into new features and bug fixes if both are present
+- Be benefit-focused — "You can now..." not "Implemented..."
+- Do not mention branch names, PR numbers, commit hashes, or developer names
+- Keep it concise — short bullet points only
+
+Write only the release notes. No preamble. No sign-off.

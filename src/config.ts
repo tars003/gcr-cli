@@ -1,6 +1,9 @@
 import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { join, dirname } from 'path';
 import { homedir } from 'os';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -62,4 +65,16 @@ export function loadClickUpAwareness(): string {
   const path = join(process.cwd(), '.gcr', 'clickup-awareness.md');
   if (!existsSync(path)) return '';
   return readFileSync(path, 'utf-8');
+}
+
+export function loadPrompt(name: string, vars: Record<string, string>): string {
+  const path = join(__dirname, 'prompts', `${name}.txt`);
+  if (!existsSync(path)) {
+    throw new Error(`Prompt template not found: ${name}.txt`);
+  }
+  let template = readFileSync(path, 'utf-8');
+  for (const [key, value] of Object.entries(vars)) {
+    template = template.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), value);
+  }
+  return template;
 }

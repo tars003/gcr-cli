@@ -1,0 +1,15 @@
+Suggest the next semantic version tag for a software release.
+
+Last release tag: {{lastTag}}
+
+Pull requests in this release:
+{{prTitles}}
+
+## Instructions
+Based on the PR titles, determine the appropriate version bump:
+- Major (x.0.0) — breaking changes or major overhauls
+- Minor (x.y.0) — new features added
+- Patch (x.y.z) — bug fixes only
+
+Respond with ONLY the new version tag. Nothing else.
+Example: v1.4.0

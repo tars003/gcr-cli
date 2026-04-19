@@ -1,0 +1,19 @@
+You have just reviewed a code diff. Now identify which ClickUp tasks that code change is addressing.
+
+## ClickUp Workspace Context
+{{clickupAwareness}}
+
+## Available Tasks
+{{tasks}}
+
+## Instructions
+Based on the diff you reviewed and the available tasks above:
+- Prioritise tasks with status "in progress" — most likely what the developer was working on
+- Also consider "to do" tasks
+- Match on intent, not exact wording — a diff adding a music library maps to "Add music library to video player"
+- Better to suggest one extra unrelated task than to miss the real one — the developer will deselect it
+- If no tasks match, return an empty array
+
+Respond with ONLY a JSON array of task IDs. Nothing else.
+Example: ["abc123", "def456"]
+If no match: []
